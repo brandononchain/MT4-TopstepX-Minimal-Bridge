@@ -1,2 +1,24 @@
-# config.yaml
-# Placeholder content. Replace with actual code from the spec.
+projectx:
+base_url: "https://gateway.projectx.example" # TODO: set to your tenant URL
+api_key: "PX-xxxxxxxxxxxxxxxx"
+account_id: "TSX-123456"
+
+
+server:
+host: 127.0.0.1
+port: 8787
+
+
+routing:
+time_in_force: GTC
+place_brackets: true
+
+
+logging:
+level: INFO
+data_dir: "data" # relative to bridge/ working dir
+
+
+ml:
+enable: true
+topic: "order_events"
