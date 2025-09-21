@@ -1,2 +1,25 @@
-# symbol_map.yaml
-# Placeholder content. Replace with actual code from the spec.
+# Base symbol → futures root mapping and contract specs
+XAUUSD:
+root: GC
+exchange: COMEX
+tick_size: 0.1
+tick_value: 10.0
+point_value: 100.0
+# Simple rollover: shift to next active month 2 business days before month end
+roll_rule: FRONT_NEXT_2BD
+active_months: ["G","J","M","Q","Z"] # Feb, Apr, Jun, Aug, Dec are common for GC
+
+
+# Optionally include others you trade
+EURUSD:
+root: 6E
+tick_size: 0.00005
+tick_value: 6.25
+GBPUSD:
+root: 6B
+tick_size: 0.0001
+tick_value: 6.25
+US30:
+root: YM
+tick_size: 1
+tick_value: 5
