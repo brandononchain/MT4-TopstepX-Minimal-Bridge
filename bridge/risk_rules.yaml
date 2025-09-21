@@ -1,2 +1,7 @@
-# risk_rules.yaml
-# Placeholder content. Replace with actual code from the spec.
+per_trade_risk_usd: 1000 # default if EA doesn’t send qty
+max_position_per_root:
+GC: 3
+6E: 3
+6B: 3
+YM: 2
+min_distance_ticks: 2
